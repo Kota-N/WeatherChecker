@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+  <body>
+    <header>
+      <h1>Weather Checker</h1>
+    </header>
+
+    <section>
+      <form action="/" method="post">
+        <div class="input-container">
+          <label for="city-name">City Name</label>
+          <input
+            type="text"
+            name="cityName"
+            id="city-name"
+            autocomplete="off"
+          />
+        </div>
+        <button type="submit" name="seeWeather">Check Weather</button>
+      </form>
+    </section>
+    <script src="js/validator.js"></script>
+  </body>
+</html>

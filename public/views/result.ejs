@@ -1,0 +1,37 @@
+<%- include("partials/header"); -%>
+
+  <body>
+    <header>
+      <h1>Weather Checker</h1>
+    </header>
+
+    <section>
+      <form action="/" method="post">
+        <div class="input-container">
+          <label for="city-name">City Name</label>
+          <input
+            type="text"
+            name="cityName"
+            id="city-name"
+            autocomplete="off"
+          />
+        </div>
+        <button type="submit" name="seeWeather">Check Weather</button>
+      </form>
+
+      <div class="result-container">
+        <ul>
+          <li>Country (City):</li>
+          <li><%= country %> (<%= city %>)</li>
+          <li>Weather:<%- icon %></li>
+          <li><%= weather %></li>
+          <li>Temperature:</li>
+          <li><%= temp %> °C (<%= tempF %> °F)</li>
+          <li>Feels Like:</li>
+          <li><%= feels_like %> °C (<%= feels_likeF %> °F)</li>
+        </ul>
+      </div>
+    </section>
+    <script src="js/validator.js"></script>
+  </body>
+</html>

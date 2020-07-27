@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: lightgreen;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(195deg, lightgreen 55%, whitesmoke 15%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  color: white;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+}
+button {
+  font-size: 1.5rem;
+  font-weight: 100;
+  border: none;
+  background-color: lightgreen;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+  width: 80%;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  background-color: white;
+  min-height: 400px;
+  width: 400px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  padding: 2rem 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  margin-bottom: 2rem;
+  width: 80%;
+}
+.input-container label {
+  font-size: 1.2rem;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.input-container input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.input-container input:focus {
+  border-bottom-color: gray;
+}
+
+.result-container {
+  color: lightgreen;
+}
+ul {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  font-size: 0.8rem;
+  padding: 3rem 1rem 0.2rem;
+  font-weight: 300;
+  position: relative;
+}
+
+li:nth-child(even) {
+  font-size: 1.2rem;
+  color: gray;
+  display: inline;
+  padding-bottom: 0;
+  border-bottom: 1px solid gray;
+}
+
+img {
+  position: absolute;
+  top: 1.5rem;
+  left: 12rem;
+  animation-name: icon;
+  animation-duration: 2s;
+}
+
+@keyframes icon {
+  from {
+    top: 1.5rem;
+    left: -10rem;
+  }
+  to {
+    top: 1.5rem;
+    left: 12rem;
+  }
+}
